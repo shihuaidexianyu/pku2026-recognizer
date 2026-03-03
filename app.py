@@ -41,6 +41,6 @@ def recognize():
 
 
 if __name__ == "__main__":
-    host = os.environ.get("PKU2026_RECOGNIZER_HOST", "127.0.0.1")
+    host = os.environ.get("PKU2026_RECOGNIZER_HOST", "0.0.0.0")
     port = int(os.environ.get("PKU2026_RECOGNIZER_PORT", "8799"))
     app.run(host=host, port=port)
